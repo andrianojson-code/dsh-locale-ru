@@ -1,0 +1,18 @@
+# Единый стиль переводов строк и явные типы файлов.
+#
+# Всё текстовое — LF, включая .ps1: PowerShell 5.1 и 7 читают такие файлы
+# нормально, а tools/audit-bundle.js отдельно проверяет, что CRLF в репозитории
+# не появился. Так диффы не «прыгают» между платформами.
+* text=auto eol=lf
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.woff2 binary
+*.ico   binary
+*.exe   binary
+
+# Репозиторий русскоязычный: не позволяем GitHub считать локали «кодом»
+# при подсчёте языков проекта.
+locales/** linguist-documentation
+docs/**    linguist-documentation

@@ -1,0 +1,5 @@
+# dsh-locale-ru bundle patch: one host row whose browser half registers the
+# Russian language and its namespace dictionaries.
+- insert:
+    - id: locale-ru
+      name: 'dsh-locale-ru'

@@ -1,0 +1,44 @@
+name: verify
+
+# Проверяет, что опубликованный бандл соответствует исходникам, что контракт
+# локали не нарушен и что аудит безопасности проходит.
+#
+# Безопасность самого workflow:
+#   - права только на чтение, никаких секретов;
+#   - pull_request, а не pull_request_target: код из форков не получает
+#     доступ к секретам и токену репозитория;
+#   - ни одно значение из событий GitHub не подставляется в командную строку,
+#     поэтому инъекция через имя ветки или заголовок PR невозможна;
+#   - всё, что запускается, лежит в этом же репозитории открытым текстом.
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Сборка из исходников
+        run: node tools/build.js
+
+      - name: Опубликованный бандл совпадает с исходниками
+        run: git diff --exit-code -- lib/client.js
+
+      - name: Контракт локали
+        run: node tools/verify.js
+
+      - name: Аудит безопасности
+        run: node tools/audit-bundle.js

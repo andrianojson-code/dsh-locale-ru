@@ -1,0 +1,65 @@
+name: Проблема с установкой или работой
+description: Пакет не ставится, приложение не запускается, язык не переключается
+title: "[проблема] "
+labels: ["баг"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Перед тем как писать, проверьте два частых случая:
+
+        1. **Приложение действительно закрыто?** Крестик в углу окна только
+           прячет его в трей. Нужен правый клик по значку → «Quit DeepSeek
+           Harness», затем запуск заново. Обновление страницы (F5) не помогает.
+        2. **Профиль найден?** `Get-ChildItem "$env:USERPROFILE\.dsh\profiles" -Directory`
+  - type: dropdown
+    id: stage
+    attributes:
+      label: На каком шаге проблема
+      options:
+        - Скачивание или распаковка архива
+        - Запуск install-standalone.ps1 / install.ps1
+        - Запуск приложения после установки
+        - Язык не переключается, интерфейс остался английским
+        - Часть строк осталась английской
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Что произошло
+      description: Что вы сделали, что ожидали увидеть, что увидели
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Вывод скрипта
+      description: Скопируйте текст, который вывел установщик целиком
+      render: text
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Версия DeepSeek Harness
+      placeholder: 0.2.0-rc.2
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Версия Windows
+      placeholder: Windows 11 23H2
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Проверки
+      options:
+        - label: Приложение было закрыто полностью (не просто окно)
+          required: true
+        - label: Я не запускал скрипт от имени администратора
+          required: true

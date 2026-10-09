@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Сообщить об уязвимости
+    url: https://github.com/andrianojson-code/dsh-locale-ru/security/advisories/new
+    about: Проблемы безопасности обсуждаются приватно, а не в публичном issue. См. SECURITY.md
+  - name: Как устроен пакет
+    url: https://github.com/andrianojson-code/dsh-locale-ru/blob/main/docs/how-it-works.md
+    about: Прежде чем сообщать о проблеме, полезно понять механику локализации

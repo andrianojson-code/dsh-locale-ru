@@ -1,0 +1,20 @@
+{
+  "member.empty": "Пустое имя участника",
+  "member.open": "Открыть {name}",
+  "phase.empty": "Пустое имя фазы",
+  "phase.unassigned": "Без фазы",
+  "run.empty": "Ни один участник не запущен",
+  "run.members.one": "{count} участник",
+  "run.members.other": "{count} участников",
+  "run.title": "{name}",
+  "status.cancelled": "Отменено",
+  "status.completed": "Завершено",
+  "status.failed": "Сбой",
+  "status.interrupted": "Прервано",
+  "status.running": "Выполняется",
+  "statusCount.cancelled": "Отменено: {count}",
+  "statusCount.completed": "Завершено: {count}",
+  "statusCount.failed": "Сбоев: {count}",
+  "statusCount.interrupted": "Прервано: {count}",
+  "statusCount.running": "Выполняется: {count}"
+}

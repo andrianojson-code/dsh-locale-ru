@@ -1,0 +1,55 @@
+name: Ошибка в переводе
+description: Строка переведена неточно, непонятно или осталась английской
+title: "[перевод] "
+labels: ["перевод"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за вычитку. Чем точнее описание, тем быстрее правка.
+        Скриншот приветствуется, но обрежьте лишнее — пути, названия проектов,
+        переписку.
+  - type: input
+    id: place
+    attributes:
+      label: Где видно
+      description: Раздел приложения
+      placeholder: Настройки → Общие, или боковая панель → Файлы
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Что показано сейчас
+      description: Точный текст, как он выглядит на экране
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Как должно быть
+      description: Ваш вариант перевода
+    validations:
+      required: true
+  - type: input
+    id: key
+    attributes:
+      label: Ключ (если знаете)
+      description: "Например: chat.json → message.toolAdded. Можно не заполнять."
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Версия DeepSeek Harness
+      description: "Узнать: dsh --version, либо Настройки → Общие → Текущая версия"
+      placeholder: 0.2.0-rc.2
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Проверки
+      options:
+        - label: Я поискал по существующим issue и не нашёл такого же
+          required: true
