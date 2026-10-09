@@ -19,14 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Об английских исходных строках
-
-Строки интерфейса, которые переводит этот пакет, взяты из DeepSeek Harness.
-Пакеты `@deepseek-ai/dsh-*` опубликованы под лицензией MIT, текст которой
-приведён выше; файлы лицензии присутствуют в самих пакетах. Перевод является
-производной работой от этих строк.
-
-Этот проект неофициальный и не связан с DeepSeek.
