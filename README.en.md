@@ -7,13 +7,13 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows-0078D4.svg)](#requirements)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-0.2.0--rc.2-4D6BFE.svg)](#requirements)
-[![Coverage](https://img.shields.io/badge/coverage-57%2F57%20namespaces-brightgreen.svg)](#coverage)
-[![Keys](https://img.shields.io/badge/keys-2603-informational.svg)](#coverage)
+[![Coverage](https://img.shields.io/badge/coverage-58%2F58%20namespaces-brightgreen.svg)](#coverage)
+[![Keys](https://img.shields.io/badge/keys-2615-informational.svg)](#coverage)
 [![Network](https://img.shields.io/badge/network-not%20used-brightgreen.svg)](#security)
 [![Audit](https://img.shields.io/badge/audit-passes-brightgreen.svg)](tools/audit-bundle.js)
 
-Russian localisation for the DeepSeek Harness web interface: **57 of 57
-namespaces, 2603 strings**.
+Russian localisation for the DeepSeek Harness web interface: **58 of 58
+namespaces, 2615 strings**.
 
 This is not a patch. DeepSeek Harness ships a pluggable locale service, and this
 package simply adds the `ru` language that the distribution does not include. It
@@ -81,7 +81,7 @@ Report vulnerabilities privately — see [SECURITY.md](SECURITY.md).
 
 ## Coverage
 
-57 of 57 namespaces, 2603 of 2603 strings — the entire user-facing copy served
+58 of 58 namespaces, 2615 of 2615 strings — the entire user-facing copy served
 by the client plugins.
 
 | Namespace | Keys | Namespace | Keys |

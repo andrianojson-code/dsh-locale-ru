@@ -5,13 +5,13 @@
 [![Лицензия: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Платформа: Windows](https://img.shields.io/badge/platform-Windows-0078D4.svg)](#требования)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-0.2.0--rc.2-4D6BFE.svg)](#требования)
-[![Покрытие](https://img.shields.io/badge/coverage-57%2F57%20namespaces-brightgreen.svg)](#покрытие-перевода)
-[![Строк](https://img.shields.io/badge/keys-2603-informational.svg)](#покрытие-перевода)
+[![Покрытие](https://img.shields.io/badge/coverage-58%2F58%20namespaces-brightgreen.svg)](#покрытие-перевода)
+[![Строк](https://img.shields.io/badge/keys-2615-informational.svg)](#покрытие-перевода)
 [![Сеть](https://img.shields.io/badge/network-not%20used-brightgreen.svg)](#безопасность)
 [![Аудит](https://img.shields.io/badge/audit-passes-brightgreen.svg)](tools/audit-bundle.js)
 
 **Русский язык для интерфейса DeepSeek Harness.** Полный перевод клиентской части:
-57 пространств имён, 2603 строки.
+58 пространств имён, 2615 строк.
 
 Это не патч приложения. DeepSeek Harness изначально умеет подключать языковые
 пакеты — здесь просто появляется язык `ru`, которого в поставке нет. Ничего не
@@ -251,7 +251,7 @@ Get-FileHash .\install-standalone.ps1 -Algorithm SHA256
 
 ## Покрытие перевода
 
-Переведено **57 из 57** пространств имён и **2603 из 2603** строк — вся
+Переведено **58 из 58** пространств имён и **2615 из 2615** строк — вся
 пользовательская копия интерфейса, которую отдают клиентские плагины.
 
 | Раздел | Строк | Раздел | Строк |
@@ -262,7 +262,7 @@ Get-FileHash .\install-standalone.ps1 -Algorithm SHA256
 | `schedule.manager` | 187 | `settings.account` | 93 |
 | `chat` | 186 | `schedule.catalog` | 70 |
 
-Плюс ещё 47 пространств имён: `deliverables`, `shortcuts`, `cordis`, `common`,
+Плюс ещё 48 пространств имён: `deliverables`, `shortcuts`, `cordis`, `common`,
 `settings.subagent`, `question`, `sidebarRight`, `skill`, `slash.menu`,
 `approval`, `plan`, `goal`, `model`, `feedback`, `job`, `sidebarFiles`,
 `sidebarTerminal`, `sidebarBrowser` и другие.
@@ -278,6 +278,15 @@ Face) и имена протоколов (Anthropic Messages, OpenAI Responses).
 
 ## Ограничения
 
+- **Каталог встроенных плагинов остаётся английским.** На странице
+  «Встроенные плагины» названия и описания берутся не из словарей, а из
+  `package.json` каждого плагина внутри архива приложения, и переопределить их
+  из профиля нельзя. Это данные пакетов, а не строки интерфейса: в поставке
+  DeepSeek Harness у них нет переводов вообще — ни у одного плагина нет карты
+  языков, поэтому и в китайской локали там английский. Перевод этой страницы
+  потребовал бы правки самого архива приложения, что противоречит устройству
+  пакета и сломалось бы при первом обновлении. Всё остальное на странице —
+  надписи, поиск, группировка, статусы — переведено.
 - **Версия приложения.** Пакет собран и проверен на `0.2.0-rc.2`. Он использует
   штатный сервис локализации; если в вашей версии он есть, всё заработает. На
   другой версии часть ключей может разойтись — это не поломка: отсутствующие

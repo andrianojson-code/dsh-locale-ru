@@ -131,7 +131,7 @@ tag_font = load_font(17, 'regular')
 
 title = 'dsh-locale-ru'
 sub = 'Русский язык для DeepSeek Harness'
-tag = '57 пространств имён · 2603 строки · MIT'
+tag = '58 пространств имён · 2615 строк · MIT'
 
 x, y = 74, 96
 # soft shadow keeps the text legible over the stars

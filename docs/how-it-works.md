@@ -66,7 +66,7 @@ window.__ModuleLoader__.load({
     var module = { exports: {} };
     var exports = module.exports;
     const LANGUAGE = { id: "ru", label: "Русский", fallback: "en" };
-    const DICTIONARIES = { /* 57 пространств имён */ };
+    const DICTIONARIES = { /* 58 пространств имён */ };
     function apply(ctx) {
       ctx.effect(() => ctx.locale.addLanguage(LANGUAGE), "dsh-locale-ru: language");
       for (const ns of Object.keys(DICTIONARIES)) {
