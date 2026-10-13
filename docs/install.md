@@ -55,7 +55,7 @@ Test-Path "$env:USERPROFILE\.dsh\profiles\desktop"
 модуль  : разложен в ...\node_modules\dsh-locale-ru
 манифест: dsh-locale-ru добавлен в зависимости и в dsh.profile.bundles
 язык    : в cordis.patch.yml добавлен preference: ru
-проверка: lib\client.js на месте, 214055 байт
+проверка: lib\client.js на месте, 215257 байт
           sha256 ab7b5414...
 ```
 
