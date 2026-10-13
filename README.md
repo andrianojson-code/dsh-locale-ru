@@ -3,6 +3,7 @@
 # dsh-locale-ru
 
 [![Лицензия: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/andrianojson-code/dsh-locale-ru/actions/workflows/verify.yml/badge.svg)](https://github.com/andrianojson-code/dsh-locale-ru/actions/workflows/verify.yml)
 [![Платформа: Windows](https://img.shields.io/badge/platform-Windows-0078D4.svg)](#требования)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-0.2.0--rc.2-4D6BFE.svg)](#требования)
 [![Покрытие](https://img.shields.io/badge/coverage-58%2F58%20namespaces-brightgreen.svg)](#покрытие-перевода)

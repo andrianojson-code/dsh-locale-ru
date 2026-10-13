@@ -5,6 +5,7 @@
 # dsh-locale-ru
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/andrianojson-code/dsh-locale-ru/actions/workflows/verify.yml/badge.svg)](https://github.com/andrianojson-code/dsh-locale-ru/actions/workflows/verify.yml)
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows-0078D4.svg)](#requirements)
 [![DeepSeek Harness](https://img.shields.io/badge/DeepSeek%20Harness-0.2.0--rc.2-4D6BFE.svg)](#requirements)
 [![Coverage](https://img.shields.io/badge/coverage-58%2F58%20namespaces-brightgreen.svg)](#coverage)
