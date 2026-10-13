@@ -1,7 +1,7 @@
 """Build the single-file installer: `install-standalone.ps1`.
 
 Some extractors flatten archives, which destroys `lib/` and `locales/ru/` and
-leaves the package files loose. This sidesteps the problem: the four files the
+leaves the package files loose. This sidesteps the problem: the six files the
 runtime needs are embedded as base64 inside one .ps1, so there is nothing to
 extract and nothing to lose.
 
@@ -30,6 +30,8 @@ EMBED = [
     'cordis.patch.yml',
     'lib/index.js',
     'lib/client.js',
+    'locale/en.json',
+    'locale/ru.json',
 ]
 
 files = {}
@@ -54,7 +56,7 @@ TEMPLATE = r'''# ===============================================================
 #  пользователя. Перед запуском закройте приложение ПОЛНОСТЬЮ — правый клик
 #  по значку в области уведомлений -> «Quit DeepSeek Harness».
 #
-#  Что делает скрипт: распаковывает четыре файла в профиль DeepSeek Harness,
+#  Что делает скрипт: распаковывает шесть файлов в профиль DeepSeek Harness,
 #  добавляет пакет в dsh.profile.bundles и включает русский язык. Больше
 #  ничего: ни сети, ни прав администратора, ни изменений в папке установки.
 #  Полное удаление — uninstall.ps1 из репозитория.

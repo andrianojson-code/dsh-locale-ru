@@ -87,7 +87,7 @@ ctx.effect(() => ctx.locale.register(ns, 'ru', DICTIONARIES[ns]), '…: ' + ns);
 - **Не требует прав администратора** и не запрашивает их. Всё происходит в папке
   текущего пользователя.
 - **Ничего не скачивает** и не требует Node, pnpm или интернета.
-- **Копирует только четыре файла** из фиксированного списка
+- **Копирует только шесть файлов** из фиксированного списка
   (`package.json`, `cordis.patch.yml`, `lib/index.js`, `lib/client.js`), а не
   «всё, что лежит рядом».
 - **Не трогает установку DeepSeek Harness** — ни одного файла в
@@ -176,8 +176,8 @@ Get-ChildItem "$env:USERPROFILE\.dsh\profiles" -Directory
 
 | Путь | Что |
 |---|---|
-| `plugins\dsh-locale-ru\` | четыре файла плагина |
-| `node_modules\dsh-locale-ru\` | те же четыре файла (загрузчик ищет имя пакета здесь) |
+| `plugins\dsh-locale-ru\` | шесть файлов плагина |
+| `node_modules\dsh-locale-ru\` | те же шесть файлов (загрузчик ищет имя пакета здесь) |
 | `package.json` | `dsh-locale-ru` в `dependencies` и в `dsh.profile.bundles` |
 | `cordis.patch.yml` | запись `- id: locale` с `preference: ru` |
 
@@ -237,7 +237,7 @@ git diff --exit-code lib/client.js        # бандл совпадает с и�
 
 | Файл | Размер | SHA-256 |
 |---|---|---|
-| `lib/client.js` | 214 055 Б | `9529ac221ec53d0eaf078779de425358ee2e7da468c8d6c7943cbf53ef080ed5` |
+| `lib/client.js` | 215 257 Б | `ab7b5414ad8d94f1a6ab212fca0fae1b85972736c7c6bf8022215a1243b80eb7` |
 | `lib/index.js` | 367 Б | `0e6468313e04779e71d0a7defa4e370b14603ce9bd0631fdd7004d286e5a5c9c` |
 
 Проверка скачанного релиза:

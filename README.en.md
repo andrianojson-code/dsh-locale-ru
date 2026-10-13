@@ -65,7 +65,7 @@ half makes exactly three calls, all on the public locale service:
 `ctx.locale.addLanguage(...)`, `ctx.locale.register(ns, 'ru', dict)` and
 `ctx.effect(...)` to own them.
 
-The installer never requests elevation, copies only a fixed four-file list into
+The installer never requests elevation, copies only a fixed six-file list into
 the user's profile, and leaves the DeepSeek Harness installation untouched.
 Nothing is fetched at install time.
 
@@ -124,7 +124,7 @@ which is what makes the published artifact verifiable against the open sources.
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `lib/client.js` | 214 055 B | `9529ac221ec53d0eaf078779de425358ee2e7da468c8d6c7943cbf53ef080ed5` |
+| `lib/client.js` | 215 257 B | `ab7b5414ad8d94f1a6ab212fca0fae1b85972736c7c6bf8022215a1243b80eb7` |
 | `lib/index.js` | 367 B | `0e6468313e04779e71d0a7defa4e370b14603ce9bd0631fdd7004d286e5a5c9c` |
 
 ## Limitations

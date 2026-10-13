@@ -56,7 +56,7 @@ Test-Path "$env:USERPROFILE\.dsh\profiles\desktop"
 манифест: dsh-locale-ru добавлен в зависимости и в dsh.profile.bundles
 язык    : в cordis.patch.yml добавлен preference: ru
 проверка: lib\client.js на месте, 214055 байт
-          sha256 9529ac22...
+          sha256 ab7b5414...
 ```
 
 Сверьте `sha256` с суммой из релиза — это подтверждает, что файл не подменён и

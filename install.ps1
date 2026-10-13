@@ -24,7 +24,16 @@ function Write-Utf8NoBom([string]$Path, [string]$Text) {
 
 # Ровно те файлы, которые читает загрузчик. Копируется именно этот список, а не
 # «всё, что лежит рядом»: так в профиль не попадает ничего лишнего.
-$PAYLOAD = @('package.json', 'cordis.patch.yml', 'lib\index.js', 'lib\client.js')
+# locale/en.json и locale/ru.json — описание самого пакета в списке плагинов:
+# приложение читает его из <пакет>/locale/<язык>.json, а не из манифеста.
+$PAYLOAD = @(
+  'package.json',
+  'cordis.patch.yml',
+  'lib\index.js',
+  'lib\client.js',
+  'locale\en.json',
+  'locale\ru.json'
+)
 
 foreach ($rel in $PAYLOAD) {
   if (-not (Test-Path (Join-Path $pack $rel))) {
