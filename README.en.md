@@ -44,6 +44,14 @@ Uninstall:
 powershell -ExecutionPolicy Bypass -File uninstall.ps1
 ```
 
+## Screenshots
+
+![Plugins page in Russian](assets/screenshots/plugins.png)
+
+| Settings → General | Built-in plugins |
+|---|---|
+| ![Settings in Russian](assets/screenshots/settings-general.png) | ![Built-in plugin descriptions translated](assets/screenshots/builtin-plugins.png) |
+
 ## Security
 
 The package is data plus one small browser bundle. That claim is checked
